@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./src/index.js"></script><!--contains function call-->
+    <script src="./src/helloworld.js"></script> <!--contains function definition--> 
+    <!-- Shows error DUE TO wrong ordering of module 
+    definition i.e. module with function definition 
+    should happen before module with function call -->
+    
+    <!-- Correction -->
+    <script src="./src/helloworld.js"></script>
+    <skcript src="./src/index.js"></skcript> 
+    <!-- WebPack automatically resolves this issue by merging these modules 
+        into single file and creating dependency graph between the modules.
+    --> 
+</body>
+</html>
