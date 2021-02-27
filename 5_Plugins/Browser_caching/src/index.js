@@ -7,4 +7,4 @@ const heading = new Heading()
 helloWorldButton.render() 
 heading.render()
 
-let a = 2; //Making changes to JS file 
+let a = 3; //Making changes to JS file 
