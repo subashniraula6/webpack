@@ -1,1 +1,1 @@
-Default configuration of webpack include support ECMAscripts like import, arrow functions, etc.
+Default configuration of webpack includes support of ECMAscripts like import, arrow functions, etc.
